@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./normalizae.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- local css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div class="container-fluid bg-gradient" id="nav-section">
+      <nav class="test-class navbar navbar-expand-xl navbar-dark">
+        <img class="navbar-logo navbar-brand" src="images/logo2.png" alt="" />
+        <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
+        <!-- Hamburger Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <!-- about tooglr -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href=""
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >About</a
+              >
+
+              <ul class="dropdown-menu" style="">
+                <li><a class="dropdown-item" href="pastor.html">Pastor</a></li>
+                <li>
+                  <a class="dropdown-item" href="statment.html"
+                    >statment of faith</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mission.html"
+                    >mission and vision</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="minstryhistory.html"
+                    >ministry history</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- end to about tooglr -->
+            <li class="nav-item">
+              <a class="nav-link" href="service-time.html">Service Time</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hof.html">Hall of Faith</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resource.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sermon.html">Sermon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="watch-live.html">Watch Live</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="give.html">Give</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End of collapsable navbar items -->
+      </nav>
+      <!--End of Navbar -->
+    </div>
+
+    <!-- Header -->
+    <header
+      id="carouselExampleControls"
+      class="hero carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="section-center hero-center">
+          <article class="sa hero-info carousel-item">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              width="800"
+              height="400"
+              xmlns="https://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: First slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777"></rect>
+              <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+            </svg>
+          </article>
+
+          <article class="hero-info carousel-item active">
+            <h3>welcome to</h3>
+            <h2>houston praise and worship center</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum provident fuga neque officiis veritatis reiciendis nemo
+              vero illum facere perspiciatis quisquam excepturi eius qui
+              assumenda beatae hic vel, et inventore.
+            </p>
+            <button class="btn">learn more</button>
+          </article>
+
+          <article class="hero-info carousel-item active">
+            <h3>welcome to</h3>
+            <h2>houston praise and worship center</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum provident fuga neque officiis veritatis reiciendis nemo
+              vero illum facere perspiciatis quisquam excepturi eius qui
+              assumenda beatae hic vel, et inventore.
+            </p>
+            <button class="btn">learn more</button>
+          </article>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </header>
+
+    <!-- services section-->
+    <section class="services">
+      <div class="section-title">
+        <h2>services</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- service center -->
+      <div class="service-center section-center">
+        <!--service-time 1 -->
+        <article class="service-time">
+          <h2>sunday</h2>
+          <h3>online & in-person</h3>
+          <h2>8:30am</h2>
+          <h2>11am</h2>
+          <h2>7pm</h2>
+        </article>
+        <!--end ofservice-time 1 -->
+
+        <!--service-time 2 -->
+        <article class="service-time">
+          <h2>wednesday</h2>
+          <h3>online & in-person</h3>
+          <h2>7:30pm</h2>
+        </article>
+        <!--end of service-time 2 -->
+        <!--service-time 3 -->
+        <article class="service-time">
+          <h2>saturday</h2>
+          <h3>online & in-person</h3>
+          <h2>7pm</h2>
+        </article>
+        <!--end of service-time 3 -->
+      </div>
+      <!-- end ofservice center -->
+    </section>
+    <!-- end of service section -->
+
+    <section class="messege">
+      <div class="section-title">
+        <h2>latest message</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="section-center message-center">
+        <article class="message-video">
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F134830513239458%2Fvideos%2F1514779358971072%2F&show_text=false&width=560&t=0"
+            width="560"
+            height="314"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen="true"
+            autoplay="1"
+          ></iframe>
+        </article>
+        <article class="message-text">
+          <h3>latest message</h3>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          </span>
+          <h2>Joy In The Journey</h2>
+          <h1>october 2,2022</h1>
+        </article>
+      </div>
+    </section>
+
+    <section class="upcoming-event">
+      <div class="section-title">
+        <h2>upcoming events</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="event-center section-center">
+        <article>
+          <img src="./images/event1.jpg" alt="" class="event-image" />
+        </article>
+        <article>
+          <img src="./images/event2.jpg" alt="" class="event-image" />
+        </article>
+        <article>
+          <img src="./images/event3.jpg" alt="" class="event-image" />
+        </article>
+        <article>
+          <img src="./images/event4.jpg" alt="" class="event-image" />
+        </article>
+        <article>
+          <img src="./images/event5.jpg" alt="" class="event-image" />
+        </article>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="contact">
+      <div class="section-center clearfix">
+        <!-- contact info -->
+        <article class="contact-info">
+          <!-- contact item -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-location-arrow"></i>
+              </span>
+              address
+            </h4>
+            <h4 class="contact-text">
+              3802 Live Oak <br />
+              Houston, TX 77004
+            </h4>
+          </div>
+          <!-- end of contact item -->
+          <!-- contact item -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              email
+            </h4>
+            <h4 class="contact-text">thehpwc@gmail.com</h4>
+          </div>
+          <!-- end of contact item -->
+          <!-- contact item -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </span>
+              telephone
+            </h4>
+            <h4 class="contact-text">(832) 275-3999</h4>
+          </div>
+          <!-- end of contact item -->
+        </article>
+        <!-- contact form -->
+        <article class="contact-form">
+          <h3>contact us</h3>
+          <form>
+            <div class="form-group">
+              <!-- inputs -->
+              <input
+                type="text"
+                placeholder="name"
+                class="form-control"
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder="email"
+                class="form-control"
+                name="email"
+              />
+              <textarea
+                name="message"
+                placeholder="message"
+                class="form-control"
+                rows="5"
+              ></textarea>
+            </div>
+            <!-- button -->
+            <button type="submit" class="submit-btn btn">submit here</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!-- end of contact -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="section-center footer-center">
+        <div class="content-left">
+          <h3>church</h3>
+          <h4 class="copyright">&copy;copyright <span id="date"></span></h4>
+          <br />
+          <h4 class="number">(832) 275-3999</h4>
+          <h4 class="address">3802 Live Oak, Houston, TX 77004</h4>
+          <h4 class="email">thehpwc@gmail.com</h4>
+        </div>
+        <div class="links">
+          <h3>quicklinks</h3>
+          <a href="">about us</a>
+          <a href="">sermon</a>
+          <a href="">events</a>
+          <a href="">blogs</a>
+        </div>
+        <div class="social-media">
+          <h3>connect</h3>
+          <a href=""
+            ><span><i class="fab fa-facebook"></i></span
+          ></a>
+          <a href=""
+            ><span><i class="fab fa-youtube"></i></span
+          ></a>
+          <a href=""
+            ><span><i class="fab fa-instagram"></i></span
+          ></a>
+          <a href=""
+            ><span><i class="fab fa-twitter"></i></span
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
+</html>

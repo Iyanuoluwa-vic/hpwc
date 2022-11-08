@@ -1068,3 +1068,25 @@ gallery section
     row-gap: 3rem;
   }
 }
+
+/*
+=====================================
+GIVE
+=====================================
+*/
+
+.give-bg {
+  max-height: 300px;
+  background: linear-gradient(
+      to bottom,
+      rgba(147, 206, 222, 0.7) -1%,
+      rgba(147, 206, 222, 0.7) 0%,
+      rgba(44, 46, 66, 0.7) 0%,
+      rgba(46, 48, 68, 0.7) 19%,
+      rgba(147, 206, 222, 0.4) 59%,
+      rgba(147, 206, 222, 0.3) 59%,
+      rgba(147, 206, 222, 0.3) 59%,
+      rgba(73, 165, 191, 0.3) 100%
+    ),
+    url(../images/give-bg.jpg) center/cover no-repeat fixed;
+}

@@ -9,9 +9,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
 
     <!-- normalize css -->
@@ -34,6 +31,11 @@
 
     <!-- local css -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Nav Bar -->
@@ -69,7 +71,7 @@
                 >About</a
               >
 
-              <ul class="dropdown-menu" style="">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="pastor.html">Pastor</a></li>
                 <li>
                   <a class="dropdown-item" href="statment.html"
@@ -93,7 +95,7 @@
               <a class="nav-link" href="service-time.html">Service Time</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="hof.html">Hall of Faith</a>
+              <a class="nav-link" href="hof.html">School</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="resource.html">Events</a>
@@ -121,75 +123,43 @@
     </div>
 
     <!-- Header -->
-    <header
-      id="carouselExampleControls"
-      class="hero carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="section-center hero-center">
-          <article class="sa hero-info carousel-item">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="https://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: First slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777"></rect>
-              <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
-            </svg>
-          </article>
-
-          <article class="hero-info carousel-item active">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1 video-wrapper">
+          <video playsinline autoplay muted loop poster="cake.jpg">
+            <source src="images/StoryExport.mov" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="car_content">
             <h3>welcome to</h3>
             <h2>houston praise and worship center</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum provident fuga neque officiis veritatis reiciendis nemo
-              vero illum facere perspiciatis quisquam excepturi eius qui
-              assumenda beatae hic vel, et inventore.
+            <h3>"where the praise never stops"!</h3>
+            <p style="margin: 0 auto">
+              I can do all things through Christ which strengthens me.
+              <span style="color: red; font-size: x-large"
+                >" Phill. 4:13 "
+              </span>
+              And we know all things work together for good to them who love the
+              Lord and are called according to his purpose.
+              <span style="color: red; font-size: x-large">" Rom. 8:28 "</span>
             </p>
-            <button class="btn">learn more</button>
-          </article>
-
-          <article class="hero-info carousel-item active">
-            <h3>welcome to</h3>
-            <h2>houston praise and worship center</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum provident fuga neque officiis veritatis reiciendis nemo
-              vero illum facere perspiciatis quisquam excepturi eius qui
-              assumenda beatae hic vel, et inventore.
-            </p>
-            <button class="btn">learn more</button>
-          </article>
+            <button style="margin-top: 1rem" class="btn_css">learn more</button>
+          </div>
+        </div>
+        <div class="swiper-slide slide2">
+          <div class="car_content"></div>
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="car_content"></div>
+        </div>
+        <div class="swiper-slide slide4">
+          <div class="car_content"></div>
         </div>
       </div>
-
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </header>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!-- end of heade -->
 
     <!-- services section-->
     <section class="services">
@@ -201,27 +171,65 @@
       <div class="service-center section-center">
         <!--service-time 1 -->
         <article class="service-time">
-          <h2>sunday</h2>
-          <h3>online & in-person</h3>
-          <h2>8:30am</h2>
-          <h2>11am</h2>
-          <h2>7pm</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="css-1az6177"
+          >
+            <path
+              d="M256 215.773c-25.265 0-45.819 20.555-45.819 45.82s20.554 45.818 45.819 45.818c25.265 0 45.819-20.554 45.819-45.819 0-25.265-20.554-45.819-45.819-45.819zm0 71.56c-14.193 0-25.741-11.547-25.741-25.741 0-14.194 11.547-25.742 25.741-25.742 14.193 0 25.741 11.547 25.741 25.742 0 14.194-11.548 25.741-25.741 25.741z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M488.323 361.404L350.63 297.027v-96.926a10.04 10.04 0 00-2.745-6.898l-81.846-86.537V51.381h14.185c5.544 0 10.039-4.496 10.039-10.039s-4.496-10.039-10.039-10.039h-14.185V10.039C266.039 4.496 261.544 0 256 0c-5.545 0-10.039 4.496-10.039 10.039v21.263h-14.185c-5.545 0-10.039 4.496-10.039 10.039s4.495 10.039 10.039 10.039h14.185v55.287l-81.845 86.536a10.037 10.037 0 00-2.746 6.898v96.926L23.677 361.403c-5.023 2.348-7.191 8.323-4.843 13.346 2.349 5.024 8.323 7.19 13.346 4.842l19.25-9v131.37c0 5.544 4.495 10.039 10.039 10.039H450.53c5.544 0 10.039-4.496 10.039-10.039V370.592l19.25 9c5.026 2.349 10.999.18 13.346-4.842 2.349-5.023.181-10.998-4.842-13.346zM161.371 491.922h-35.078v-63.528c0-5.544-4.495-10.039-10.039-10.039-5.545 0-10.039 4.496-10.039 10.039v63.528H71.509V361.204l89.862-42.013v172.731zm120.37 0H230.27v-86.096c0-14.194 11.543-25.742 25.731-25.742 6.882 0 13.343 2.676 18.2 7.541 4.863 4.862 7.54 11.325 7.54 18.2v86.097zm48.81-188.506v188.505h-28.732v-86.096c0-12.237-4.767-23.743-13.415-32.393-8.646-8.658-20.153-13.426-32.404-13.426-25.26 0-45.809 20.555-45.809 45.82v86.095h-28.742V204.097h.001L256 125.272l74.551 78.825v99.319zm109.94 188.506h-34.705v-42.496c0-5.544-4.496-10.039-10.039-10.039-5.544 0-10.039 4.496-10.039 10.039v42.496h-35.077v-172.73l89.86 42.013v130.717z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M395.749 412.612c-12.919 0-12.941 20.078 0 20.078 12.919 0 12.94-20.078 0-20.078z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <h3>sunday</h3>
+          <h4>11am - 12:30</h4>
+          <p>This service is a time of worship and praise to God.</p>
         </article>
         <!--end ofservice-time 1 -->
 
         <!--service-time 2 -->
         <article class="service-time">
-          <h2>wednesday</h2>
-          <h3>online & in-person</h3>
-          <h2>7:30pm</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 64 64"
+            class="css-1az6177"
+          >
+            <path
+              d="M20 22h7v15a1 1 0 001 1h8a1 1 0 001-1V25a1 1 0 00-2 0v9.586l-2-2V18h6.586l2 2H36a1 1 0 000 2h8a1 1 0 001-1v-8a1 1 0 00-1-1h-7V7a1 1 0 00-1-1h-8a1 1 0 00-1 1v6a1 1 0 002 0V9.414l2 2V16h-6.586l-2-2H24a1 1 0 000-2h-4a1 1 0 00-1 1v8a1 1 0 001 1zm12 12.414L33.586 36h-3.171zM41.414 17L43 15.414v3.172zM32 9.586L30.415 8h3.171zm1 1.829l2-2V13a1 1 0 001 1h5.586l-2 2H33zm-2 21.172l-2 2V21a1 1 0 00-1-1h-5.586l2-2H31zm-10-14v-3.173L22.586 17zM44.293 31.293l-5 5a1 1 0 101.414 1.414l5-5a1 1 0 00-1.414-1.414zM22.241 37.651a1 1 0 001.518-1.3l-6-7a1 1 0 00-1.518 1.3z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M22.553 28.105a1 1 0 00-.448 1.342l1 2a1 1 0 101.79-.894l-1-2a1 1 0 00-1.342-.448zM40 32a1 1 0 00.9-.553l1-2a1 1 0 00-1.79-.894l-1 2A1 1 0 0040 32zM31 41v2a1 1 0 002 0v-2a1 1 0 00-2 0z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M61.17 56.015l-2.551-.44a8.975 8.975 0 00-6.346-5.737l-13.242-3.183a5.923 5.923 0 00-.588-.1 12.175 12.175 0 0110 .909l3.307 1.86a8.152 8.152 0 006.562.628 1 1 0 00-.632-1.9 6.148 6.148 0 01-4.95-.473l-3.306-1.86a14.235 14.235 0 00-7.971-1.807 14.163 14.163 0 0110.1.984 3.241 3.241 0 004.347-1.448 1 1 0 00-1.79-.9 1.237 1.237 0 01-1.658.553A16.218 16.218 0 0032 48.236a16.214 16.214 0 00-20.447-5.131 1.236 1.236 0 01-1.653-.553 1 1 0 00-1.79.9 3.242 3.242 0 004.337 1.448 14.159 14.159 0 0110.1-.983 14.234 14.234 0 00-7.974 1.806l-3.306 1.86a6.14 6.14 0 01-4.95.473 1 1 0 00-.632 1.9 8.147 8.147 0 006.562-.628l3.307-1.86a12.167 12.167 0 0110-.909c-.2.028-.4.06-.6.106l-13.233 3.18a9.065 9.065 0 00-3.868 2.045 1 1 0 001.332 1.492 7.061 7.061 0 013-1.593l13.219-3.177a4.506 4.506 0 015.211 2.618L2.83 56.015A1 1 0 002 57v4a1 1 0 001.146.989l23.041-3.41A2.447 2.447 0 0129 61a1 1 0 001 1h4a1 1 0 001-1 2.448 2.448 0 012.44-2.45 2.12 2.12 0 01.373.029l6.269.928a1 1 0 00.293-1.979l-6.242-.923a4.047 4.047 0 00-.693-.055A4.45 4.45 0 0033.113 60h-2.226a4.447 4.447 0 00-4.993-3.4L4 59.841v-2l27.992-4.826 22.186 3.823 5.822 1v2l-11.667-1.724a1 1 0 00-.293 1.979l12.814 1.9A.889.889 0 0061 62a1 1 0 001-1v-4a1 1 0 00-.83-.985zm-9.37-4.233a7 7 0 014.467 3.388l-1.506-.26-21.4-3.689a4.553 4.553 0 015.215-2.621z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <h3>wednesday</h3>
+
+          <h4>7:30pm - 8pm</h4>
+          <p>
+            Our Bible Study is a time of deep study of the Bible and learning
+            more about the ways of God.
+          </p>
         </article>
         <!--end of service-time 2 -->
         <!--service-time 3 -->
-        <article class="service-time">
+        <!-- <article class="service-time">
           <h2>saturday</h2>
           <h3>online & in-person</h3>
           <h2>7pm</h2>
-        </article>
+        </article> -->
         <!--end of service-time 3 -->
       </div>
       <!-- end ofservice center -->
@@ -233,11 +241,11 @@
         <h2>latest message</h2>
         <div class="underline"></div>
       </div>
-      <div class="section-center message-center">
+      <div class="section-center message-center letest_message">
         <article class="message-video">
           <iframe
             src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F134830513239458%2Fvideos%2F1514779358971072%2F&show_text=false&width=560&t=0"
-            width="560"
+            width="460"
             height="314"
             style="border: none; overflow: hidden"
             scrolling="no"
@@ -265,21 +273,48 @@
         <div class="underline"></div>
       </div>
 
-      <div class="event-center section-center">
+      <div class="event-center">
         <article>
           <img src="./images/event1.jpg" alt="" class="event-image" />
+          <div class="img_leyarr">
+            <h3>ThanksGiving</h3>
+          </div>
         </article>
         <article>
           <img src="./images/event2.jpg" alt="" class="event-image" />
+          <div class="img_leyarr">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
         </article>
         <article>
           <img src="./images/event3.jpg" alt="" class="event-image" />
+          <div class="img_leyarr">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
         </article>
         <article>
           <img src="./images/event4.jpg" alt="" class="event-image" />
+          <div class="img_leyarr">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
         </article>
         <article>
           <img src="./images/event5.jpg" alt="" class="event-image" />
+          <div class="img_leyarr">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
         </article>
       </div>
     </section>
@@ -351,12 +386,63 @@
               ></textarea>
             </div>
             <!-- button -->
-            <button type="submit" class="submit-btn btn">submit here</button>
+            <button type="submit" class="submit-btn btn_css">
+              submit here
+            </button>
           </form>
         </article>
       </div>
     </section>
     <!-- end of contact -->
+
+    <!--  start of gallery section-->
+    <section class="">
+      <div class="gallery-section">
+        <article>
+          <img src="./images/youth/image1.jpeg" alt="" class="gallery-img" />
+        </article>
+        <article>
+          <img src="./images/youth/image2.jpg" alt="" class="gallery-img" />
+        </article>
+        <article>
+          <img src="./images/youth/image3.jpg" alt="" class="gallery-img" />
+        </article>
+        <article>
+          <img src="./images/youth/image4.jpg" alt="" class="gallery-img" />
+        </article>
+        <article>
+          <img src="./images/youth/image5.jpg" alt="" class="gallery-img" />
+        </article>
+        <article>
+          <img src="./images/youth/image6.jpg" alt="" class="gallery-img" />
+        </article>
+        <article>
+          <img src="./images/youth/image7.jpeg" alt="" class="gallery-img" />
+        </article>
+        <article>
+          <img src="./images/youth/image8.jpg" alt="" class="gallery-img" />
+        </article>
+      </div>
+    </section>
+    <!--  end of gallery section-->
+
+    <!-- map section start -->
+
+    <section id="map">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.658890266338!2d-95.3666131!3d29.729638599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf097562b7e5%3A0x2996578b8bd4e9cf!2s3802%20Live%20Oak%20St%2C%20Houston%2C%20TX%2077004%2C%20USA!5e0!3m2!1sen!2sbd!4v1668064702194!5m2!1sen!2sbd"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- map section end -->
 
     <!-- footer -->
     <footer class="footer">
@@ -394,5 +480,25 @@
       </div>
     </footer>
     <!-- end of footer -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script cript>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

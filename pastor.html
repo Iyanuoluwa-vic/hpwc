@@ -1,257 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us</title>
 
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- normalize css -->
-    <link rel="stylesheet" href="./normalizae.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./normalizae.css" />
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-  <body>
-    <!-- Nav Bar -->
-    <div class="container-fluid bg-gradient" id="nav-section">
-      <nav class="test-class navbar navbar-expand-xl navbar-dark">
-        <img class="navbar-logo navbar-brand" src="images/logo2.png" alt="" />
-        <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
-        <!-- Hamburger Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <!-- about tooglr -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href=""
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >About</a
-              >
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-              <ul class="dropdown-menu" style="">
-                <li><a class="dropdown-item" href="pastor.html">Pastor</a></li>
-                <li>
-                  <a class="dropdown-item" href="statment.html"
-                    >statment of faith</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="mission.html"
-                    >mission and vision</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="minstryhistory.html"
-                    >ministry history</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <!-- end to about tooglr -->
-            <li class="nav-item">
-              <a class="nav-link" href="service-time.html">Service Time</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hof.html">Hall of Faith</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resource.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sermon.html">Sermon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="watch-live.html">Watch Live</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="give.html">Give</a>
-            </li>
-          </ul>
+<body>
+  <!-- Nav Bar -->
+  <div class="container-fluid bg-gradient" id="nav-section">
+    <nav class="test-class navbar navbar-expand-xl navbar-dark">
+      <img class="navbar-logo navbar-brand" src="images/logo2.png" alt="" />
+      <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- about tooglr -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+
+            <ul class="dropdown-menu" style="">
+              <li><a class="dropdown-item" href="pastor.html">Pastor</a></li>
+              <li>
+                <a class="dropdown-item" href="statment.html">statment of faith</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mission.html">mission and vision</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="minstryhistory.html">ministry history</a>
+              </li>
+            </ul>
+          </li>
+          <!-- end to about tooglr -->
+          <li class="nav-item">
+            <a class="nav-link" href="service-time.html">Service Time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hof.html">Hall of Faith</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resource.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sermon.html">Sermon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="watch-live.html">Watch Live</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="give.html">Give</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End of collapsable navbar items -->
+    </nav>
+    <!--End of Navbar -->
+  </div>
+
+  <section id="pastors" class="">
+    <h1 class="leadership-title">Meet The Dream Team</h1>
+    <!-- Grid of profile pictures of the leadership -->
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100" style="">
+          <img src="images/bios/frankrush-square.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h1 class="card-text">Bishop Frank A. Rush</h3>
+              <button type="button" class="bio-btn btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#FrankRushModal">Learn More</button>
+          </div>
         </div>
-        <!-- End of collapsable navbar items -->
-      </nav>
-      <!--End of Navbar -->
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100" style="">
+          <a href="empty-bio.html">
+            <img src="images/bios/sydneycooper-square.jpg" class="card-img-top" alt="..." />
+          </a>
+          <div class="card-body">
+            <h1 class="card-text">Pastor Sidney Cooper</h1>
+            <button type="button" class="bio-btn btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#SidneyCooperModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100" style="">
+          <a href="empty-bio.html">
+            <img src="images/bios/cherylcooper-square.jpg" class="card-img-top" alt="..." />
+          </a>
+          <div class="card-body">
+            <h1 class="card-text">Min. Cheryl Cooper</h1>
+            <button type="button" class="bio-btn btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#CherylCooperModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100" style="">
+          <a href="empty-bio.html">
+            <img src="images/bios/gerrenrush2-square.jpg" class="card-img-top" alt="..." />
+          </a>
+          <div class="card-body">
+            <h3 class="card-text">Min. Gerren Rush</h3>
+            <button type="button" class="bio-btn btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#GerrenRushModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100" style="">
+          <a href="empty-bio.html">
+            <img src="images/bios/cynthiabatieste-square.jpg" class="card-img-top" alt="..." />
+          </a>
+          <div class="card-body">
+            <h1 class="card-text">Min. Cynthia Batieste</h1>
+            <button type="button" class="bio-btn btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#CynthiaBatiesteModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100" style="">
+          <a href="empty-bio.html">
+            <img src="images/bios/tomeishareed-square.jpg" class="card-img-top" alt="..." />
+          </a>
+          <div class="card-body">
+            <h1 class="card-text">Dr. Tomeisha Reed</h1>
+            <button type="button" class="bio-btn btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#TomeishaReedModal">Learn More</button>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <section id="pastors" class="">
-      <h1 class="leadership-title">Meet Our Leadership</h1>
-      <!-- Grid of profile pictures of the leadership -->
-      <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-5">
-        <div class="col">
-          <div class="card h-100" style="">
-            <a href="empty-bio.html">
-              <img
-                src="images/bios/frankrush-square.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h3 class="card-text">Bishop Frank Rush</h3>
-            </div>
-          </div>
+  <!-- ================ POP UP BIOS ================ -->
+  <!-- Bishop Rush Pop-up Bio -->
+  <div class="modal fade" id="FrankRushModal" tabindex="-1" aria-labelledby="FrankRushModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="BishopRushLabel">Bio: Bishop Frank A. Rush</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-        <div class="col">
-          <div class="card h-100" style="">
-            <a href="empty-bio.html">
-              <img
-                src="images/bios/sydneycooper-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h3 class="card-text">Sydney Cooper</h3>
-            </div>
-          </div>
+        <div class="modal-body">
+          <p class="bio-text">
+            “I can do all things through Christ which strengthens me.” <em>Phill. 4:13</em>
+            <br>
+            "And we know all things work together for good to them who love the Lord and are called according to his purpose”. <em>Rom. 8:28</em>
+            <br><br>
+            Born to Rev. Otis L. Rush Sr. and Mrs. Alma Rush on Dec. 26, 1951, Bishop Frank A. Rush is the 4th of 6 children born to this wonderful set of parents. Both his parents were proud graduates of A J. Moore High School!
+            <br><br>
+            All the Rush children are AJMHS alums: Rev. Otis L. Rush Jr. (1964); Sherryl Rush Johnson (1966); Lt. Cmdr. (R) Robert J. Rush Sr. (1968); Bishop Frank A. Rush (1970); Ronald C. Rush- Dec’d (1971); and Linda Rush Watkins (1973).
+            <br><br>
+            Bishop Rush served as 1970 Class President, which he calls “the Best Class!” He was a member of the Choir, Band and other organizations. He attended Texas Southern University (TSU) from 1970-72 on a Band Scholarship (trombone), pledged
+            Phi Beta Sigma Fraternity, and was named “Sophomore Of The Year!”
+            <br><br>
+            From 1972-74 Bishop Rush attended & graduated from U. C. Berkeley on a Crown-Zellerbach Scholarship with dual Bachelors Degrees in English & African-American Studies. He not only made the Dean’s List but graduated “with highest honors”.
+            Rush attended Thurgood Marshall School of Law from 1974-77 on an Earl Warren Legal Training Scholarship and served as President of his graduating class.
+            Bishop Rush was hired by the Law School upon graduation and served for 2 years as Placement Director from 1977-79. He was instrumental in getting TSU Law students hired all over America. The students & School honored him with the
+            “Outstanding Placement Director Award” in 1979.
+            <br><br>
+            Rush practiced law in the Criminal, Personal Injury and Family Law fields from 1979-2022, and is licensed in State and Federal Courts. Recently, he retired after 43 years of practice. He is now considered “Emeritus” status with the State
+            of Texas.
+            <br><br>
+            Bishop Rush was called into ministry by God in 1985 & preached his 1st Sermon on Feb. 9, 1986 at Mt. Horeb MBC under the outstanding leadership of Dr. S. H. Smith Sr. Title: “Message To Modern Man: I’ll Rise Again!” Rush calls Pastor
+            Smith the “Best Pastor in America”, at the youthful age of 92!
+            <br><br>
+            Bishop Rush was installed as Pastor of True Missionary Baptist Church- now Houston Praise And Worship Center (HPWC) - on Oct. 9, 1987 and has served there continuously with his wife for life, Dr. JoAnn Vallie Rush, until her passing July
+            25, 2021.
+            <br><br>
+            Bishop Rush is extremely thankful to God for the church & ministry help from his wife. Dr. Joann received 2 earned Masters and 2 earned Doctorates in Ministry and Theology. She is known internationally as an outstanding Praise Dance
+            Teacher, Preacher & Praise Banner maker. She authored 13 books.
+            <br><br>
+            HPWC is an international Church with locations in America, Kenya, and Pakistan. Bishop Rush has been recognized by the State of Texas Legislature as a “Senior Religious Advisor”.
+            <br><br>
+            Having married his best friend and the love of his life (Joann) on July 10, 1976, the Rushes have been blessed with 2 wonderful children (Gerren & Cherish- both Teachers), amazing daughter-in-love (Monyce), and 3 wonderful grandchildren
+            (Zoë-8, Calen-6, and Zuri - due in September).
+            <br><br>
+            Gerren is an author & both he and Cherish teach liturgical dance internationally. Monyce is a Licensed School Psychologist & owns a baking business. Zoë and Calen have advanced degree belts in Taekwondo.
+            <br><br>
+            Bishop Rush has received multiple Honorary Doctorate Degrees in Ministry, numerous Public Service Awards and has served in various organizations -like President of his Civic Club- aimed at improving the local community and mentoring.
+            <br><br>
+            His Church sponsors many activities but 2 of his favorites are the annual U. S. Armed Forces Day Celebration which grew from 25 Vendors last year to over 60 Vendors this year and included Houston Mayor Sylvester Turner as this year’s
+            Keynote Speaker; and the newly- organized Royal Ambassadors Community School, which will pay the Teachers, but be FREE for students.
+            <br><br>
+            Rush is the 3rd of his siblings to speak at the A. J. Moore HS Reunion behind Rev. Otis Jr. and Sherryl. He is an author, song writer, poet, and has served as a News Paper Editor and Deejay. He and Dr. JoAnn co-hosted a highly rated
+            Christian TV Show for several years.
+            <br><br>
+            Bishop Rush is most grateful to God for his salvation, Family, friends, journey and life purposes. He feels blessed to be called & used by God to serve & help others, especially those he calls “the least, the last, the lost and the
+            unloved” with the love of Jesus Christ!
+          </p>
         </div>
-
-        <div class="col">
-          <div class="card h-100" style="">
-            <a href="empty-bio.html">
-              <img
-                src="images/bios/cherylcooper-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h3 class="card-text">Cheryl Cooper</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100" style="">
-            <a href="empty-bio.html">
-              <img
-                src="images/bios/gerrenrush-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h3 class="card-text">Gerren Rush</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100" style="">
-            <a href="empty-bio.html">
-              <img
-                src="images/bios/cynthiabatieste-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h3 class="card-text">Cynthia Batieste</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100" style="">
-            <a href="empty-bio.html">
-              <img
-                src="images/bios/tomeishareed-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h3 class="card-text">Tomeisha Reed</h3>
-            </div>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="section-center footer-center">
-        <div class="content-left">
-          <h3>church</h3>
-          <h4 class="copyright">&copy;copyright <span id="date"></span></h4>
-          <br />
-          <h4 class="number">(832) 275-3999</h4>
-          <h4 class="address">3802 Live Oak, Houston, TX 77004</h4>
-          <h4 class="email">thehpwc@gmail.com</h4>
+  <!-- Pastor Sidney Cooper Pop-up Bio -->
+  <div class="modal fade" id="SidneyCooperModal" tabindex="-1" aria-labelledby="SidneyCooperModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SydneyCooperLabel">Bio: Pastor Sidney Cooper</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="links">
-          <h3>quicklinks</h3>
-          <a href="">about us</a>
-          <a href="">sermon</a>
-          <a href="">events</a>
-          <a href="">blogs</a>
+        <div class="modal-body">
+          <p class="bio-text">
+            Sidney Cooper is a native of Houston Texas.
+            <br><br>
+            He is married to Cheryl Cooper for 31 years. Together they have 3 children Adam, Andrew and Sydnie.
+            <br><br>
+            Sidney a Jack Yates alumni, spent 4 years at Jackson State University studying Economics and Business Management. He moved to Boston, Massachusetts in 1986 after accepting the call to preach. He completed his Bachelor and Masters in
+            Education from Cambridge College in Cambridge MA.
+            <br><br>
+            He studied theology classes at both Boston Theological And Gordon Conwell Theological Seminaries.
+            <br><br>
+            Reverend Cooper ordained in 2007 served from 1987-2007 on staff at St. Paul AME Church Cambridge, MA. Reverend Cooper established F.A.V.A. With God Christian Worship Center in 2010-2018.
+            <br><br>
+            After moving to Houston TX in 2018, Pastor Sidney and Cheryl Cooper started attending and serving at Houston Praise and Worship Center.
+          </p>
         </div>
-        <div class="social-media">
-          <h3>connect</h3>
-          <a href=""
-            ><span><i class="fab fa-facebook"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-youtube"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-instagram"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-twitter"></i></span
-          ></a>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-    </footer>
-    <!-- end of footer -->
-    <script src="js/app.js"></script>
-  </body>
+    </div>
+  </div>
+
+  <!-- Min. Cheryl Cooper Pop-up Bio -->
+  <div class="modal fade" id="CherylCooperModal" tabindex="-1" aria-labelledby="CherylCooperModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="CherylCooperLabel">Bio: Minister Cheryl Cooper</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="bio-text">
+            Cheryl V. Cooper is a native of Newark New Jersey. She is married to Rev. Sidney Cooper and together they have three children- Adam, Andrew and Sydnie. She’s a graduate of Wheelock College Boston University with a Bachelors degree in
+            Early Childhood Education.
+            <br><br>
+            She has been teaching for over 30 years in private and public schools and is presently teaching at the Energized For Excellence middle school in Houston, Texas.
+            <br><br>
+            Cheryl is a liturgical dance Minister and has been involved with various Dance Ministries over the past 20 years.
+            <br><br>
+            Along with her husband Pastor Sidney Cooper, Cheryl has been involved in many church and community outreaches with Houston Praise And Worship Center (HPWC) since 2019.
+            <br><br>
+            Currently, she leads the Prayer Ministry, and is involved in the Women’s Ministry, Flames of Fire and Evangelism Ministry.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Min. Gerren Rush Pop-up Bio -->
+  <div class="modal fade" id="GerrenRushModal" tabindex="-1" aria-labelledby="GerrenRushModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="GerrenRushLabel">Bio: Minister Gerren Rush</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="bio-text">
+            <a href="https://www.gerrenrush.com/about" target="_blank" rel="noopener noreferrer">Visit his website!</a>
+            <br><br>
+            Gerren Rush’s biggest passion is to encourage others to follow their dreams by reaching for his own. After four years of hard work, he released his first, self-published book in 2017, with a brand new book on Fatherhood, in the making.
+            <br><br>
+            Gerren’s love for people has led him throughout the United States and the Caribbean speaking about topics such as “Faith over Fear", “The Fatherhood Initiative,” Motherhood Initiative,” and “Giant Slayer,” along with “The Importance of
+            Learning Styles.” Gerren welcomes audiences, great and small, with open arms.
+            <br><br>
+            Over the years, Gerren’s family has been his primary source of motivation. Gerren recently said to a large audience, “How can I seek to inspire students and my own children to reach for their dreams, if I haven’t done the same!” Gerren
+            has made it his mission to continue to break the mold of what a teacher, author, speaker, creator and father can achieve. His goal is to show what one person can do when you set your mind to accomplish your goals.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Min. Cynthia Batieste Pop-up Bio -->
+  <div class="modal fade" id="CynthiaBatiesteModal" tabindex="-1" aria-labelledby="CynthiaBatiesteModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="CynthiaBatiesteLabel">Bio: Minister Cynthia Batieste</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="bio-text">
+            Minister Cynthia Batieste graduated from George Washington Carver class of 1969 in the top 10 of 500 students. She worked as cashier, then cashier supervisor at the historical Circle Food Store before being hired by South Central Bell as
+            a directory assistant operator in 1972. Min. Batieste was a transit operator for the Regional Transit Authority (formerly New Orleans Public Service Inc. NOPSI) from 1976 until 1986. She was employed as assistant manager for Shell gas
+            station from 1987 to 1989.
+            <br><br>
+            Min. Batieste attended Philips Junior College (1989-1991) and received an Associates of Science degree in Hotel and Restaurant Management. She began working for New Orleans Marriott as a housekeeper while in school; after graduation she
+            was promoted to assistant manager in January 1992, then in August 1993 she was promoted to housekeeping manager of the Medical Center Marriott in Houston, Texas. She was responsible for managing the housekeeping department which included
+            but was not limited to: scheduling employees; ordering supplies; inspecting guest rooms, restaurants, banquet rooms, and all public areas at all times for cleanliness. Cynthia was promoted to Director of Operations in January 1995 which
+            add the managing the laundry department to her duties. She was awarded Hotel Employee of the Month in April 1996.
+            Cynthia resigned from the hotel in March 1998 and began working as administrative assistant for the Family Assistance Center (The Center), a crisis pregnancy center that operated on grounds of HPWC. She scheduled clients and provide them
+            with alternatives and resources for their unplanned pregnancies, ordered supplies, assisted with fundraising and event planning. She worked as office manager from May 2000 until August 2004, assuming added responsibilities of
+            administering and reporting grant funds, communicating with donors, hiring, training and terminating employees and volunteers, payroll, and fundraising and event planning. The Center closed in August 2004.
+            <br><br>
+            In September 2004 she began working as Membership Coordinator at one of the Boys and Girls Club of Greater Houston’s clubs where she was responsible for collecting the attendance of club members and their participation in various programs
+            offered at the club. In January 2005, became the membership coordinator at the main office collecting the attendance of club members and their participation in various programs offered at the organization’s ten clubs. She was promoted to
+            administrative assistant to the organization’s ten directors in August 2006, collecting payroll data for all employees, creating forms for program tracking and reporting, assisting with planning employee program training and events. In
+            2008 she became the organization’s grant administrator. As grant administrator she trained program personnel how to use the data tracking system, the requirements of funders, gathered program data and submitted documents as required to
+            all funders. She retired in 2013, moving to New Orleans to care for her mother who is now 94 years.
+            <br><br>
+            She attended the College of Biblical Studies and was licensed (1999) and ordained minister (2001) by Bishop Frank A. Rush at Houston Praise and Worship Center (HPWC). In addition, she volunteered there as usher, church secretary, Sunday
+            school
+            teacher, children’s church minister, and finance manager. Min. Batieste currently serves on the Board of Directors as the secretary/treasurer. In 2022, she submitted an application to the Veterans Development Group on behalf of HPWC which
+            was awarded
+            a multi-million-dollar grant.
+            <br><br>
+            Min. Batieste joined Mount Calvary Church of God in Christ (COGIC) in 2013 and has since 2015, volunteered and is currently volunteering as church secretary and Sunday school teacher. In 2019 she was appointed as assistant jurisdiction
+            secretary of
+            the South Central Louisiana Ecclesiastic C.O.G.I.C. Jurisdiction. In 2022 she became a candidate for Evangelist Missionary. The church recently changed its name to Abiding Blessings Ministries (ABM). In 2022, she submitted an application
+            to the
+            Veterans Development Group on behalf of ABM which was also awarded a multi-million-dollar grant.
+            <br><br>
+            Since 2017, Min. Batieste has volunteered is still volunteering in the administrative office of Villa St. Maurice where she resides. She also teaches Bible study classes to residents in her building. Min. Batieste has one daughter and two
+            sons (one
+            deceased). She is grandmother to four girls and great-grandmother to three boys, one of whom lives with her. She loves spending time with her grands, teaching, watching movies and traveling especially cruising.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dr. Tomeisha Reed Pop-up Bio -->
+  <div class="modal fade" id="TomeishaReedModal" tabindex="-1" aria-labelledby="TomeishaReedModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="TomeishaReedLabel">Bio: Dr. Tomeisha Reed</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="bio-text">
+            Dr. Tomeisha Reed serves as a distinguished educator of 23 years within Harris County Department of Education and College of the Mainland. She has also taught, coached, and mentored in Houston Independent School District.
+            <br><br>
+            Dr. Tomeisha Reed was born on November 23, 1976 in Hurst, Texas. In 1988, she moved to Houston, Texas and attended school in Houston and Pasadena Independent School Districts. While in attendance of these districts, Dr. Reed played on the volleyball team, drill team, and served as a member of Health Occupations Students of America.
+            <br><br>
+            Dr. Tomeisha Reed graduated from Worthing High School in 1995 and attended San Jacinto College immediately after high school. Dr. Reed transferred to Prairie View in 1996. In 1997 she joined one of the campus student organizations at Prairie View, known as Wisconsin Sleepers Incorporated. This non-greek organization involves promoting unity among black and serving in the community. In the year 2000, she received her Bachelor of Science Degree in Health. In 2003, Dr. Reed received her master’s in education administration, and later obtained her principal certification. In 2015 she received her Doctoral degree from Capella University and desires to become a tenured college professor and Dean.
+            <br><br>
+            Throughout her life, she has also served in ministry. In the year 2000, Dr. Reed founded the Rebirth Praise Dance Ministry. The ministry was started at Carter G. Woodson Middle School, where the Lord used her to minister to over 70 young men and women in the dance. This ministry became a refuge for many of the students who were members, allowing them to travel and learn more about Jesus. Dr. Reed was also the co-founder of Rivers of Living Water dance ministry, where she partnered with the late Sherley Williams. While a member of Greater St. Matthews Baptist church, she was a member of Eternal light dance ministry. She currently ministers with Royal Priesthood Christian Dance Academy, and the Flames of Fire Dance Ministry.  She has taken on a new role as the dance leader of the Flames of Fire Dance Ministry, which was founded by the late Dr.JoAnn Vallie Rush. It is indeed an honor for Dr. Reed to continue Dr. Rush’s legacy!
+            <br><br>
+            Dr. Reed is a proud mother of two young men. While her oldest son is a junior at Prairie View A&M majoring in Kinesiology; her other son is a senior in high school and has committed to Washington State for football!
+            <br><br>
+            In her spare time, she enjoys playing volleyball, after all she did receive volleyball coach of the year twice within the Houston Independent School District. Dr. Reed also likes to create or assist in community service projects. Her last project involved utilizing at-risk youth to volunteer at the Houston Food Bank.  Her passion in life involves mentoring young women and men, to empower and equip them with the necessary tools to be successful in life.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="section-center footer-center">
+      <div class="content-left">
+        <h3>church</h3>
+        <h4 class="copyright">&copy;copyright <span id="date"></span></h4>
+        <br />
+        <h4 class="number">(832) 275-3999</h4>
+        <h4 class="address">3802 Live Oak, Houston, TX 77004</h4>
+        <h4 class="email">thehpwc@gmail.com</h4>
+      </div>
+      <div class="links">
+        <h3>Quick Links</h3>
+        <a href="">About Us</a>
+        <a href="">Sermon</a>
+        <a href="">Events</a>
+        <a href="">Blogs</a>
+      </div>
+      <div class="social-media">
+        <h3>connect</h3>
+        <a href=""><span><i class="fab fa-facebook"></i></span></a>
+        <a href=""><span><i class="fab fa-youtube"></i></span></a>
+        <a href=""><span><i class="fab fa-instagram"></i></span></a>
+        <a href=""><span><i class="fab fa-twitter"></i></span></a>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <script src="js/app.js"></script>
+</body>
+
 </html>

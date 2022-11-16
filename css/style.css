@@ -776,47 +776,54 @@ hero section
   /* hero  */
   .slide1 {
     /* min-height: 100vh; */
-    background: linear-gradient(
+    background:
+    linear-gradient(
         to bottom,
 
-        rgba(44, 46, 66, 0.8) 0%,
-        rgba(46, 48, 68, 0.8) 100%
+        rgba(44, 46, 66, 0.9) 0%,
+        rgba(46, 48, 68, 0.9) 100%
       ),
       url() center bottom/cover no-repeat;
   }
   .slide2 {
-    background: linear-gradient(
+    background:
+    linear-gradient(
         to bottom,
 
-        rgba(150, 150, 150, 0.48) 0%,
-        rgba(150, 150, 150, 0.48) 100%
+        rgba(150, 150, 150, 0.25) 0%,
+        rgba(150, 150, 150, 0.25) 100%
       ),
-      url(../images/Screenshot\ 2022-11-11\ 174254.png) center bottom/cover
+      url(../images/GodAndYou22.2.png) center
         no-repeat;
+    background-size: contain;
   }
   .slide3 {
     color: #fff;
     /* min-height: 100vh; */
-    background: linear-gradient(
+    background:
+    linear-gradient(
         to bottom,
 
-        rgba(150, 150, 150, 0.48) 0%,
-        rgba(150, 150, 150, 0.48) 100%
+        rgba(150, 150, 150, 0.25) 0%,
+        rgba(150, 150, 150, 0.25) 100%
       ),
-      url(../images/Screenshot\ 2s022-11-11\ 174254.png) center bottom/cover
+      url(../images/Offering2.png) center
         no-repeat;
+    background-size: contain;
   }
 
   .slide4 {
     color: #fff;
     /* min-height: 100vh; */
-    background: linear-gradient(
+    background:
+    linear-gradient(
         to bottom,
 
-        rgba(150, 150, 150, 0.48) 0%,
-        rgba(150, 150, 150, 0.48) 100%
+        rgba(150, 150, 150, 0.25) 0%,
+        rgba(150, 150, 150, 0.25) 100%
       ),
-      url(../images/bibleStudy.png) center bottom/cover no-repeat;
+      url(../images/bibleStudy.png) center no-repeat;
+    background-size: contain;
   }
 }
 
@@ -858,18 +865,18 @@ img {
 }
 
 .video-wrapper {
-  /* Telling our absolute positioned video to 
+  /* Telling our absolute positioned video to
   be relative to this element */
   position: relative;
 
   width: 400px;
   height: 200px;
 
-  /* Will not allow the video to overflow the 
+  /* Will not allow the video to overflow the
   container */
   overflow: hidden;
 
-  /* Centering the container's content vertically 
+  /* Centering the container's content vertically
   and horizontally */
   text-align: center;
   display: flex;
@@ -1798,8 +1805,8 @@ contact
 }
 
 .navbar-brand {
-  display: grid;
-  align-items: flex-start;
+  /* display: grid;
+  align-items: flex-start; */
 }
 
 .container-fluid {
@@ -1838,6 +1845,10 @@ contact
 
 .bio-btn {
   margin: 5% auto 0 auto;
+}
+
+.bio-text {
+  margin: auto;
 }
 
 /*

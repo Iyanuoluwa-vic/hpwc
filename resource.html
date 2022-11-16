@@ -1,319 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- normalize css -->
-    <link rel="stylesheet" href="./normalizae.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./normalizae.css" />
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-    <!-- local css -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- Nav Bar -->
-    <div class="container-fluid bg-gradient" id="nav-section">
-      <nav class="test-class navbar navbar-expand-xl navbar-dark">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <!-- local css -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <div class="container-fluid bg-gradient" id="nav-section">
+    <nav class="test-class navbar navbar-expand-xl navbar-dark">
+      <a href="index.html">
         <img class="navbar-logo navbar-brand" src="images/logo2.png" alt="" />
-        <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
-        <!-- Hamburger Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <!-- about tooglr -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href=""
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >About</a
-              >
+      </a>
+      <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- about tooglr -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">About</a>
 
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="pastor.html">Pastor</a></li>
-                <li>
-                  <a class="dropdown-item" href="statment.html"
-                    >statment of faith</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="mission.html"
-                    >mission and vision</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="minstryhistory.html"
-                    >ministry history</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <!-- end to about tooglr -->
-            <li class="nav-item">
-              <a class="nav-link" href="service-time.html">Service Time</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hof.html">School</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resource.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sermon.html">Sermon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="watch-live.html">Watch Live</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="give.html">Give</a>
-            </li>
-          </ul>
-        </div>
-        <!-- End of collapsable navbar items -->
-      </nav>
-      <!--End of Navbar -->
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="leadership.html" a>The Dream Team</a></li>
+              <li>
+                <a class="dropdown-item" href="statment.html">statment of faith</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mission.html">mission and vision</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="minstryhistory.html">ministry history</a>
+              </li>
+            </ul>
+          </li>
+          <!-- end to about tooglr -->
+          <li class="nav-item">
+            <a class="nav-link" href="service-time.html">Service Time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rasl.html">RASL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resource.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sermon.html">Sermon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="watch-live.html">Watch Live</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="give.html">Give</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End of collapsable navbar items -->
+    </nav>
+    <!--End of Navbar -->
+  </div>
+  <section class="events">
+    <div class="section-title">
+      <h2>Events</h2>
+      <div class="underline"></div>
     </div>
-    <section class="events">
-      <div class="section-title">
-        <h2>Events</h2>
-        <div class="underline"></div>
-      </div>
 
-      <div class="even_container">
-        <div class="event_heading">
-          <h2>NOVEMBER 2022</h2>
+    <div class="even_container">
+      <div class="event_heading">
+        <h2>NOVEMBER 2022</h2>
+      </div>
+      <div class="line"></div>
+      <div class="event_boxes">
+        <div class="box">
+          <div class="left">
+            <div class="month">
+              <span>10</span>
+              <span>Nov</span>
+            </div>
+            <div class="date_time">
+              <span>9:00 pm</span>
+              <h4>UPPER ROOM HOURS OF PRAYER</h4>
+              <span>Thursday</span>
+            </div>
+          </div>
+          <div class="right"><button>
+              EVENT DETAIL
+            </button></div>
         </div>
-        <div class="line"></div>
-        <div class="event_boxes">
-          <div class="box">
-            <div class="left">
-              <div class="month">
-                <span>10</span>
-                <span>Nov</span>
-              </div>
-              <div class="date_time">
-                <span>9:00 pm</span>
-                <h4>UPPER ROOM HOURS OF PRAYER</h4>
-                <span>Thursday</span>
-              </div>
+        <div class="box">
+          <div class="left">
+            <div class="month">
+              <span>12</span>
+              <span>Nov</span>
             </div>
-            <div class="right"><button>
+            <div class="date_time">
+              <span>9:00 pm - 6:00pm </span>
+              <h4>KINGDOM WARRIORS WEEKLY FASTING AND PRAYER</h4>
+              <span>Saturday</span>
+            </div>
+          </div>
+          <div class="right"><button>
               EVENT DETAIL
             </button></div>
-          </div>
-          <div class="box">
-            <div class="left">
-              <div class="month">
-                <span>12</span>
-                <span>Nov</span>
-              </div>
-              <div class="date_time">
-                <span>9:00 pm - 6:00pm </span>
-                <h4>KINGDOM WARRIORS WEEKLY FASTING AND PRAYER</h4>
-                <span>Saturday</span>
-              </div>
+        </div>
+        <div class="box">
+          <div class="left">
+            <div class="month">
+              <span>10</span>
+              <span>Nov</span>
             </div>
-            <div class="right"><button>
+            <div class="date_time">
+              <span>6:00 pm - 7:00 pm</span>
+              <h4>CHOIR PRACTICE
+              </h4>
+              <span>Saturday</span>
+            </div>
+          </div>
+          <div class="right"><button>
               EVENT DETAIL
             </button></div>
-          </div>
-          <div class="box">
-            <div class="left">
-              <div class="month">
-                <span>10</span>
-                <span>Nov</span>
-              </div>
-              <div class="date_time">
-                <span>6:00 pm - 7:00 pm</span>
-                <h4>CHOIR PRACTICE
-                </h4>
-                <span>Saturday</span>
-              </div>
+        </div>
+        <div class="box">
+          <div class="left">
+            <div class="month">
+              <span>10</span>
+              <span>Nov</span>
             </div>
-            <div class="right"><button>
+            <div class="date_time">
+              <span>9:00 pm</span>
+              <h4>UPPER ROOM HOURS OF PRAYER</h4>
+              <span>Thursday</span>
+            </div>
+          </div>
+          <div class="right"><button>
               EVENT DETAIL
             </button></div>
-          </div>
-          <div class="box">
-            <div class="left">
-              <div class="month">
-                <span>10</span>
-                <span>Nov</span>
-              </div>
-              <div class="date_time">
-                <span>9:00 pm</span>
-                <h4>UPPER ROOM HOURS OF PRAYER</h4>
-                <span>Thursday</span>
-              </div>
+        </div>
+        <div class="box">
+          <div class="left">
+            <div class="month">
+              <span>10</span>
+              <span>Nov</span>
             </div>
-            <div class="right"><button>
+            <div class="date_time">
+              <span>9:00 pm</span>
+              <h4>UPPER ROOM HOURS OF PRAYER</h4>
+              <span>Thursday</span>
+            </div>
+          </div>
+          <div class="right"><button>
               EVENT DETAIL
             </button></div>
-          </div>
-          <div class="box">
-            <div class="left">
-              <div class="month">
-                <span>10</span>
-                <span>Nov</span>
-              </div>
-              <div class="date_time">
-                <span>9:00 pm</span>
-                <h4>UPPER ROOM HOURS OF PRAYER</h4>
-                <span>Thursday</span>
-              </div>
+        </div>
+        <div class="box">
+          <div class="left">
+            <div class="month">
+              <span>10</span>
+              <span>Nov</span>
             </div>
-            <div class="right"><button>
+            <div class="date_time">
+              <span>9:00 pm</span>
+              <h4>UPPER ROOM HOURS OF PRAYER</h4>
+              <span>Thursday</span>
+            </div>
+          </div>
+          <div class="right"><button>
               EVENT DETAIL
             </button></div>
-          </div>
-          <div class="box">
-            <div class="left">
-              <div class="month">
-                <span>10</span>
-                <span>Nov</span>
-              </div>
-              <div class="date_time">
-                <span>9:00 pm</span>
-                <h4>UPPER ROOM HOURS OF PRAYER</h4>
-                <span>Thursday</span>
-              </div>
+        </div>
+        <div class="box">
+          <div class="left">
+            <div class="month">
+              <span>10</span>
+              <span>Nov</span>
             </div>
-            <div class="right"><button>
+            <div class="date_time">
+              <span>9:00 pm</span>
+              <h4>UPPER ROOM HOURS OF PRAYER</h4>
+              <span>Thursday</span>
+            </div>
+          </div>
+          <div class="right"><button>
               EVENT DETAIL
             </button></div>
-          </div>
-          <div class="box">
-            <div class="left">
-              <div class="month">
-                <span>10</span>
-                <span>Nov</span>
-              </div>
-              <div class="date_time">
-                <span>9:00 pm</span>
-                <h4>UPPER ROOM HOURS OF PRAYER</h4>
-                <span>Thursday</span>
-              </div>
+        </div>
+        <div class="box">
+          <div class="left">
+            <div class="month">
+              <span>10</span>
+              <span>Nov</span>
             </div>
-            <div class="right"><button>
+            <div class="date_time">
+              <span>9:00 pm</span>
+              <h4>UPPER ROOM HOURS OF PRAYER</h4>
+              <span>Thursday</span>
+            </div>
+          </div>
+          <div class="right"><button>
               EVENT DETAIL
             </button></div>
-          </div>
-          <div class="box">
-            <div class="left">
-              <div class="month">
-                <span>10</span>
-                <span>Nov</span>
-              </div>
-              <div class="date_time">
-                <span>9:00 pm</span>
-                <h4>UPPER ROOM HOURS OF PRAYER</h4>
-                <span>Thursday</span>
-              </div>
-            </div>
-            <div class="right"><button>
-              EVENT DETAIL
-            </button></div>
-          </div>
         </div>
       </div>
+    </div>
 
-      <div class="event-1 counter-center">
-        <h4>US Armed Forces Day 2022</h4>
-      </div>
-      <div class="event-1 event-center section-center">
-        <article>
-          <img src="./images/events/US Armed Forces Day 2022/1.jpg" alt="" class="event-image" />
-        </article>
-        <article>
-          <img src="./images/events/US Armed Forces Day 2022/2.jpg" alt="" class="event-image" />
-        </article>
-        <article>
-          <img src="./images/events/US Armed Forces Day 2022/3.jpg" alt="" class="event-image" />
-        </article>
-      </div>
+    <div class="event-1 counter-center">
+      <h4>US Armed Forces Day 2022</h4>
+    </div>
+    <div class="event-1 event-center section-center">
+      <article>
+        <img src="./images/events/US Armed Forces Day 2022/1.jpg" alt="" class="event-image" />
+      </article>
+      <article>
+        <img src="./images/events/US Armed Forces Day 2022/2.jpg" alt="" class="event-image" />
+      </article>
+      <article>
+        <img src="./images/events/US Armed Forces Day 2022/3.jpg" alt="" class="event-image" />
+      </article>
+    </div>
 
-      <div class="event-2 counter-center">
-        <h4>Thanksgiving 2021</h4>
-      </div>
-      <div class="event-2  section-center picsmall25">
-        <article>
-          <img src="./images/events/Thanksgiving 2021/1.png" alt="" class="event-image" />
-        </article>
-      </div>
+    <div class="event-2 counter-center">
+      <h4>Thanksgiving 2021</h4>
+    </div>
+    <div class="event-2  section-center picsmall25">
+      <article>
+        <img src="./images/events/Thanksgiving 2021/1.png" alt="" class="event-image" />
+      </article>
+    </div>
 
-      <div class="event-3 counter-center">
-        <h4>Cop and Kids</h4>
-      </div>
-      <div class="event-3 event-center1 section-center picsmall50">
-        <article>
-          <img src="./images/events/Cop and Kids/1.jpg" alt="" class="event-image" />
-        </article>
-        <article>
-          <img src="./images/events/Cop and Kids/2.jpeg" alt="" class="event-image" />
-        </article>
-      </div>
+    <div class="event-3 counter-center">
+      <h4>Cop and Kids</h4>
+    </div>
+    <div class="event-3 event-center1 section-center picsmall50">
+      <article>
+        <img src="./images/events/Cop and Kids/1.jpg" alt="" class="event-image" />
+      </article>
+      <article>
+        <img src="./images/events/Cop and Kids/2.jpeg" alt="" class="event-image" />
+      </article>
+    </div>
 
-      <div class="event-4 counter-center">
-        <h4>US Armed Forces Day 2021</h4>
-      </div>
-      <div class="event-4 event-center section-center">
-        <article>
-          <img src="./images/events/US Armed Forces Day 2021/1.jpg" alt="" class="event-image" />
-        </article>
-        <article>
-          <img src="./images/events/US Armed Forces Day 2021/2.jpg" alt="" class="event-image" />
-        </article>
-        <article>
-          <img src="./images/events/US Armed Forces Day 2021/3.jpg" alt="" class="event-image" />
-        </article>
-      </div>
+    <div class="event-4 counter-center">
+      <h4>US Armed Forces Day 2021</h4>
+    </div>
+    <div class="event-4 event-center section-center">
+      <article>
+        <img src="./images/events/US Armed Forces Day 2021/1.jpg" alt="" class="event-image" />
+      </article>
+      <article>
+        <img src="./images/events/US Armed Forces Day 2021/2.jpg" alt="" class="event-image" />
+      </article>
+      <article>
+        <img src="./images/events/US Armed Forces Day 2021/3.jpg" alt="" class="event-image" />
+      </article>
+    </div>
 
-    </section>
-  </body>
+  </section>
+</body>
+
 </html>

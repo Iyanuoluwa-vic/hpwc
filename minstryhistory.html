@@ -1,248 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- normalize css -->
-    <link rel="stylesheet" href="./normalizae.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./normalizae.css" />
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-    <!-- local css -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- Nav Bar -->
-    <div class="container-fluid bg-gradient" id="nav-section">
-      <nav class="test-class navbar navbar-expand-xl navbar-dark">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <!-- local css -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <div class="container-fluid bg-gradient" id="nav-section">
+    <nav class="test-class navbar navbar-expand-xl navbar-dark">
+      <a href="index.html">
         <img class="navbar-logo navbar-brand" src="images/logo2.png" alt="" />
-        <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
-        <!-- Hamburger Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <!-- about tooglr -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href=""
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >About</a
-              >
+      </a>
+      <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- about tooglr -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">About</a>
 
-              <ul class="dropdown-menu" style="">
-                <li><a class="dropdown-item" href="pastor.html">Pastor</a></li>
-                <li>
-                  <a class="dropdown-item" href="statment.html"
-                    >statment of faith</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="mission.html"
-                    >mission and vision</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="minstryhistory.html"
-                    >ministry history</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <!-- end to about tooglr -->
-            <li class="nav-item">
-              <a class="nav-link" href="service-time.html">Service Time</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hof.html">School</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resource.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sermon.html">Sermon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="watch-live.html">Watch Live</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="give.html">Give</a>
-            </li>
-          </ul>
-        </div>
-        <!-- End of collapsable navbar items -->
-      </nav>
-      <!--End of Navbar -->
+            <ul class="dropdown-menu" style="">
+              <li><a class="dropdown-item" href="leadership.html" a>The Dream Team</a></li>
+              <li>
+                <a class="dropdown-item" href="statment.html">statment of faith</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mission.html">mission and vision</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="minstryhistory.html">ministry history</a>
+              </li>
+            </ul>
+          </li>
+          <!-- end to about tooglr -->
+          <li class="nav-item">
+            <a class="nav-link" href="service-time.html">Service Time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rasl.html">RASL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resource.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sermon.html">Sermon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="watch-live.html">Watch Live</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="give.html">Give</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End of collapsable navbar items -->
+    </nav>
+    <!--End of Navbar -->
+  </div>
+
+  <header class="minstry"></header>
+
+  <section>
+    <div class="section-title">
+      <h2>ministry history</h2>
     </div>
 
-    <header class="minstry"></header>
+    <div class="statment-faith section-center">
+      <article class="faith">
+        <p>
+          1. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
+          perspiciatis qui nulla cumque voluptatem voluptate repudiandae
+          blanditiis ducimus nihil maiores cupiditate ipsam!
+        </p>
+      </article>
+      <article class="faith">
+        <p>
+          2. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
+          perspiciatis qui nulla cumque voluptatem voluptate repudiandae
+          blanditiis ducimus nihil maiores cupiditate ipsam!
+        </p>
+      </article>
+      <article class="faith">
+        <p>
+          3. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
+          perspiciatis qui nulla cumque voluptatem voluptate repudiandae
+          blanditiis ducimus nihil maiores cupiditate ipsam!
+        </p>
+      </article>
+      <article class="faith">
+        <p>
+          4. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
+          perspiciatis qui nulla cumque voluptatem voluptate repudiandae
+          blanditiis ducimus nihil maiores cupiditate ipsam!
+        </p>
+      </article>
+      <article class="faith">
+        <p>
+          5. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
+          perspiciatis qui nulla cumque voluptatem voluptate repudiandae
+          blanditiis ducimus nihil maiores cupiditate ipsam!
+        </p>
+      </article>
+      <article class="faith">
+        <p>
+          6. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
+          perspiciatis qui nulla cumque voluptatem voluptate repudiandae
+          blanditiis ducimus nihil maiores cupiditate ipsam!
+        </p>
+      </article>
+      <article class="faith">
+        <p>
+          7. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
+          perspiciatis qui nulla cumque voluptatem voluptate repudiandae
+          blanditiis ducimus nihil maiores cupiditate ipsam!
+        </p>
+      </article>
+    </div>
+  </section>
+  <section>
+    <div class="section-title">
+      <h3>founder</h3>
+    </div>
 
-    <section>
-      <div class="section-title">
-        <h2>ministry history</h2>
+    <div class="ordinace section-center">
+      <article>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <strong> Mollitia praesentium non</strong> autem molestiae quia a et
+        ullam quidem saepe ratione beatae dolorem minus voluptatum dolor
+        illum, totam enim repellendus.
+        <strong>
+          Nesciunt? Rem molestias quo corrupti deleniti quos
+          accusantium,</strong>
+        blanditiis veniam, officiis quasi voluptate nobis, fugit magnam
+        consequuntur. Aliquam, esse, dignissimos ab corporis cupiditate
+        voluptate, magnam nihil natus
+        <strong> impedit dolorum accusamus? Deleniti?</strong>
+      </article>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="section-center footer-center">
+      <div class="content-left">
+        <h3>church</h3>
+        <h4 class="copyright">&copy;copyright <span id="date"></span></h4>
+        <br />
+        <h4 class="number">(832) 275-3999</h4>
+        <h4 class="address">3802 Live Oak, Houston, TX 77004</h4>
+        <h4 class="email">thehpwc@gmail.com</h4>
       </div>
+      <div class="links">
+        <h3>quicklinks</h3>
+        <a href="">about us</a>
+        <a href="">sermon</a>
+        <a href="">events</a>
+        <a href="">blogs</a>
+      </div>
+      <div class="social-media">
+        <h3>connect</h3>
+        <a href=""><span><i class="fab fa-facebook"></i></span></a>
+        <a href=""><span><i class="fab fa-youtube"></i></span></a>
+        <a href=""><span><i class="fab fa-instagram"></i></span></a>
+        <a href=""><span><i class="fab fa-twitter"></i></span></a>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+</body>
 
-      <div class="statment-faith section-center">
-        <article class="faith">
-          <p>
-            1. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
-            perspiciatis qui nulla cumque voluptatem voluptate repudiandae
-            blanditiis ducimus nihil maiores cupiditate ipsam!
-          </p>
-        </article>
-        <article class="faith">
-          <p>
-            2. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
-            perspiciatis qui nulla cumque voluptatem voluptate repudiandae
-            blanditiis ducimus nihil maiores cupiditate ipsam!
-          </p>
-        </article>
-        <article class="faith">
-          <p>
-            3. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
-            perspiciatis qui nulla cumque voluptatem voluptate repudiandae
-            blanditiis ducimus nihil maiores cupiditate ipsam!
-          </p>
-        </article>
-        <article class="faith">
-          <p>
-            4. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
-            perspiciatis qui nulla cumque voluptatem voluptate repudiandae
-            blanditiis ducimus nihil maiores cupiditate ipsam!
-          </p>
-        </article>
-        <article class="faith">
-          <p>
-            5. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
-            perspiciatis qui nulla cumque voluptatem voluptate repudiandae
-            blanditiis ducimus nihil maiores cupiditate ipsam!
-          </p>
-        </article>
-        <article class="faith">
-          <p>
-            6. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
-            perspiciatis qui nulla cumque voluptatem voluptate repudiandae
-            blanditiis ducimus nihil maiores cupiditate ipsam!
-          </p>
-        </article>
-        <article class="faith">
-          <p>
-            7. &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Et eius aperiam beatae reiciendis animi assumenda, itaque, harum
-            perspiciatis qui nulla cumque voluptatem voluptate repudiandae
-            blanditiis ducimus nihil maiores cupiditate ipsam!
-          </p>
-        </article>
-      </div>
-    </section>
-    <section>
-      <div class="section-title">
-        <h3>founder</h3>
-      </div>
-
-      <div class="ordinace section-center">
-        <article>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          <strong> Mollitia praesentium non</strong> autem molestiae quia a et
-          ullam quidem saepe ratione beatae dolorem minus voluptatum dolor
-          illum, totam enim repellendus.
-          <strong>
-            Nesciunt? Rem molestias quo corrupti deleniti quos
-            accusantium,</strong
-          >
-          blanditiis veniam, officiis quasi voluptate nobis, fugit magnam
-          consequuntur. Aliquam, esse, dignissimos ab corporis cupiditate
-          voluptate, magnam nihil natus
-          <strong> impedit dolorum accusamus? Deleniti?</strong>
-        </article>
-      </div>
-    </section>
-    <!-- footer -->
-    <footer class="footer">
-      <div class="section-center footer-center">
-        <div class="content-left">
-          <h3>church</h3>
-          <h4 class="copyright">&copy;copyright <span id="date"></span></h4>
-          <br />
-          <h4 class="number">(832) 275-3999</h4>
-          <h4 class="address">3802 Live Oak, Houston, TX 77004</h4>
-          <h4 class="email">thehpwc@gmail.com</h4>
-        </div>
-        <div class="links">
-          <h3>quicklinks</h3>
-          <a href="">about us</a>
-          <a href="">sermon</a>
-          <a href="">events</a>
-          <a href="">blogs</a>
-        </div>
-        <div class="social-media">
-          <h3>connect</h3>
-          <a href=""
-            ><span><i class="fab fa-facebook"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-youtube"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-instagram"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-twitter"></i></span
-          ></a>
-        </div>
-      </div>
-    </footer>
-    <!-- end of footer -->
-  </body>
 </html>

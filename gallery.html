@@ -1,207 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
 
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <title>CSS Image Gallery</title>
+  <link rel="stylesheet" href="css/galleryPage.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" />
 
-    <!-- normalize css -->
-    <link rel="stylesheet" href="./normalizae.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./normalizae.css" />
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+  <!-- local css -->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- local css -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- Nav Bar -->
-    <div class="container-fluid bg-gradient" id="nav-section">
-      <nav class="test-class navbar navbar-expand-xl navbar-dark">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-buttons.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/jquery.fancybox-thumbs.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        helpers: {
+          buttons: {},
+        },
+      });
+
+      $(".filter").on("click", function() {
+        var $this = $(this);
+        if (!$this.hasClass("active")) {
+          $(".filter").removeClass("active");
+          $this.addClass("active"); //Set active tab
+          //Get data-rel
+          var $filter = $this.data("rel");
+          $filter == "all" ?
+            $(".fancybox")
+            .attr("data-fancybox-group", "gallery")
+            .not(":visible")
+            .fadeIn() : //else
+            $(".fancybox")
+            .fadeOut(0)
+            .filter(function() {
+              return $(this).data("filter") == $filter;
+            })
+            .attr("data-fancybox-group", $filter)
+            .fadeIn(1000);
+        } //if
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <div class="container-fluid bg-gradient" id="nav-section">
+    <nav class="test-class navbar navbar-expand-xl navbar-dark">
+      <a href="index.html">
         <img class="navbar-logo navbar-brand" src="images/logo2.png" alt="" />
-        <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
-        <!-- Hamburger Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <!-- about tooglr -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href=""
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >About</a
-              >
+      </a>
+      <h3 class="navbar-brand">Houston Praise <br />and Worship Center</h3>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- about tooglr -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">About</a>
 
-              <ul class="dropdown-menu" style="">
-                <li><a class="dropdown-item" href="pastor.html">Pastor</a></li>
-                <li>
-                  <a class="dropdown-item" href="statment.html"
-                    >statment of faith</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="mission.html"
-                    >mission and vision</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="minstryhistory.html"
-                    >ministry history</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <!-- end to about tooglr -->
-            <li class="nav-item">
-              <a class="nav-link" href="service-time.html">Service Time</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hof.html">School</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resource.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sermon.html">Sermon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="watch-live.html">Watch Live</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="give.html">Give</a>
-            </li>
-          </ul>
-        </div>
-        <!-- End of collapsable navbar items -->
-      </nav>
-      <!--End of Navbar -->
-    </div>
-    <section>
-      <div class="section-title">
-        <h2>gallery</h2>
-        <div class="underline"></div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="leadership.html" a>The Dream Team</a></li>
+              <li>
+                <a class="dropdown-item" href="statment.html">statment of faith</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mission.html">mission and vision</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="minstryhistory.html">ministry history</a>
+              </li>
+            </ul>
+          </li>
+          <!-- end to about tooglr -->
+          <li class="nav-item">
+            <a class="nav-link" href="service-time.html">Service Time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rasl.html">RASL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resource.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sermon.html">Sermon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="watch-live.html">Watch Live</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="give.html">Give</a>
+          </li>
+        </ul>
       </div>
+      <!-- End of collapsable navbar items -->
+    </nav>
+    <!--End of Navbar -->
+  </div>
 
-      <div class="gallery-center section-center">
-        <article class="gallery">
-          <div class="gallery_img">
-            <img src="./images/gallery/image1.jpg" alt="" />
-            <div class="img_leyar">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
-          </div>
-          </div>
-          <div class="gallery_img">
-            <img src="./images/gallery/image2.jpg" alt="" />
-            <div class="img_leyar">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
-          </div>
-          </div>
-          <div class="gallery_img">
-            <img src="./images/gallery/image3.jpg" alt="" />
-            <div class="img_leyar">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
-          </div>
-          </div>
-          <div class="gallery_img">
-            <img src="./images/gallery/image4.jpg" alt="" />
-            <div class="img_leyar">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
-          </div>
-          </div>
-        </article>
+  <div class="container">
+    <section>
+      <div class="gallery">
+        <!--START OF youth-->
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image1.jpeg"><img src="images/youth/image1.jpeg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image2.jpg"><img src="images/youth/image2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image3.jpg"><img src="images/youth/image3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image4.jpg"><img src="images/youth/image4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image5.jpg"><img src="images/youth/image5.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image6.jpg"><img src="images/youth/image6.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image7.jpeg"><img src="images/youth/image7.jpeg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image8.jpg"><img src="images/youth/image8.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image9.jpg"><img src="images/youth/image9.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="youth" href="images/youth/image10.jpeg"><img src="images/youth/image10.jpeg" /></a>
+        <!--END OF youth-->
+
+        <!--START U_S_Armed_Force_Day -->
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="U_S_Armed_Force_Day" href="images/U.S_Armed_Forces_Day/arm1.jpg"><img src="images/U.S_Armed_Forces_Day/arm1.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="U_S_Armed_Force_Day" href="images/U.S_Armed_Forces_Day/arm2.jpg"><img src="images/U.S_Armed_Forces_Day/arm2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="U_S_Armed_Force_Day" href="images/U.S_Armed_Forces_Day/arm3.jpg"><img src="images/U.S_Armed_Forces_Day/arm3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="U_S_Armed_Force_Day" href="images/U.S_Armed_Forces_Day/arm4.jpg"><img src="images/U.S_Armed_Forces_Day/arm4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="U_S_Armed_Force_Day" href="images/U.S_Armed_Forces_Day/arm5.jpg"><img src="images/U.S_Armed_Forces_Day/arm5.jpg" /></a>
+        <!--END START U_S_Armed_Force_Day -->
+
+        <!-- THAKSGIVING -->
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving1.JPG"><img src="images/ThanksGiving/giving1.JPG" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving1.JPG"><img src="images/ThanksGiving/giving1.JPG" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving2.jpg"><img src="images/ThanksGiving/giving2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving3.jpg"><img src="images/ThanksGiving/giving3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving4.jpg"><img src="images/ThanksGiving/giving4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving5.jpg"><img src="images/ThanksGiving/giving5.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving6.jpg"><img src="images/ThanksGiving/giving6.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving7.jpg"><img src="images/ThanksGiving/giving7.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving8.JPG"><img src="images/ThanksGiving/giving8.JPG" /></a>
+
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="ThanksGiving" href="images/ThanksGiving/giving8.JPG"><img src="images/ThanksGiving/giving8.JPG" /></a>
+
+        <!-- END OF THAKSGIVING -->
+
+        <!--Cops_and_Kid -->
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="Cops_and_Kid" href="images/Cop and Kids/1.jpg"><img src="images/Cop and Kids/1.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="Cops_and_Kid" href="images/Cop and Kids/2.jpg"><img src="images/Cop and Kids/2.JPEG" /></a>
+        <!-- END OF Cops_and_Kid -->
+
+        <!-- OTHER IMAGE -->
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other1.jpg"><img src="images/otherPic/other1.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other2.jpg"><img src="images/otherPic/other2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other3.jpg"><img src="images/otherPic/other3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other4.jpg"><img src="images/otherPic/other4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other5.jpg"><img src="images/otherPic/other5.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other1.jpg"><img src="images/otherPic/other1.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other6.jpg"><img src="images/otherPic/other6.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other7.jpg"><img src="images/otherPic/other7.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other8.jpeg"><img src="images/otherPic/other8.jpeg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/othe91.jpg"><img src="images/otherPic/other9.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other10.jpg"><img src="images/otherPic/other10.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other1q.jpg"><img src="images/otherPic/other11.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other12.jpg"><img src="images/otherPic/other12.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other13.jpg"><img src="images/otherPic/other13.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other14.JPEG"><img src="images/otherPic/other14.JPEG" /></a>
+        <a class="fancybox" data-fancybox-group="gallery" data-filter="other" href="images/otherPic/other15.JPG"><img src="images/otherPic/other15.JPG" /></a>
+        <!-- END OF OTHER IMAGES -->
       </div>
     </section>
+    <aside>
+      <nav>
+        <a data-rel="all" href="javascript:;" class="filter active">View all</a>
+        <a data-rel="ThanksGiving" href="javascript:;" class="filter">ThanksGiving</a>
+        <a data-rel="U_S_Armed_Force_Day" href="javascript:;" class="filter">U_S Armed Force Day</a>
+        <a data-rel="youth" href="javascript:;" class="filter">Youth</a>
+        <a data-rel="Cops_and_Kid" href="javascript:;" class="filter">Cops and Kids</a>
+        <a data-rel="other" href="javascript:;" class="filter">Other</a>
+      </nav>
+    </aside>
+  </div>
+</body>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="section-center footer-center">
-        <div class="content-left">
-          <h3>church</h3>
-          <h4 class="copyright">&copy;copyright <span id="date"></span></h4>
-          <br />
-          <h4 class="number">(832) 275-3999</h4>
-          <h4 class="address">3802 Live Oak, Houston, TX 77004</h4>
-          <h4 class="email">thehpwc@gmail.com</h4>
-        </div>
-        <div class="links">
-          <h3>quicklinks</h3>
-          <a href="">about us</a>
-          <a href="">sermon</a>
-          <a href="">events</a>
-          <a href="">blogs</a>
-        </div>
-        <div class="social-media">
-          <h3>connect</h3>
-          <a href=""
-            ><span><i class="fab fa-facebook"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-youtube"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-instagram"></i></span
-          ></a>
-          <a href=""
-            ><span><i class="fab fa-twitter"></i></span
-          ></a>
-        </div>
-      </div>
-    </footer>
-    <!-- end of footer -->
-  </body>
 </html>

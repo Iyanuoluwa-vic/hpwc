@@ -12,6 +12,8 @@ Welcome to the Church Website! Our goal is to provide a comprehensive and user-f
 ## Demo
 
 ![Alt text](homepage.JPG)
+![Alt text](1668598905747.jpeg)
+![Alt text](<1668598906048%20(1).jpeg>)
 
 ## Deployment
 
